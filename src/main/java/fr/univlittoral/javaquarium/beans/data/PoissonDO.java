@@ -20,8 +20,14 @@ public class PoissonDO {
     @Column(name = "poisson_specie", unique = true)
     private String specie;
 
-    @Column(name = "poisson_description")
-    private String description;
+    @Column(name = "poisson_description1")
+    private String description1;
+    
+    @Column(name = "poisson_description2")
+    private String description2;
+    
+    @Column(name = "poisson_description3")
+    private String description3;
 
     @Column(name = "poisson_color")
     private String color;
@@ -31,7 +37,7 @@ public class PoissonDO {
 
     @Column(name = "poisson_width")
     private Double width;
-
+    
     @Column(name = "poisson_price")
     private String price;
 
@@ -45,7 +51,7 @@ public class PoissonDO {
         return id;
     }
 
-    /**
+	/**
      * @param id : id to set
      */
     public void setId(Long id) {
@@ -69,21 +75,54 @@ public class PoissonDO {
     }
 
     /**
-     * Get description value
+     * Get description1 value
      *
-     * @return description
+     * @return description1
      */
-    public String getDescription() {
-        return description;
+    public String getDescription1() {
+        return description1;
     }
 
     /**
-     * @param description : description to set
+     * @param description1 : description1 to set
      */
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescription1(String description1) {
+        this.description1 = description1;
     }
 
+    /**
+     * Get description2 value
+     *
+     * @return description2
+     */
+    public String getDescription2() {
+        return description1;
+    }
+
+    /**
+     * @param description2 : description2 to set
+     */
+    public void setDescription2(String description2) {
+        this.description2 = description2;
+    }
+    
+    /**
+     * Get description3 value
+     *
+     * @return description3
+     */
+    public String getDescription3() {
+        return description3;
+    }
+
+    /**
+     * @param description3 : description1 to set
+     */
+    public void setDescription3(String description3) {
+        this.description3 = description3;
+    }
+    
+    
     /**
      * Get color value
      *
@@ -131,21 +170,19 @@ public class PoissonDO {
     public void setLength(Double length) {
         this.length = length;
     }
-
+    
     /**
-     * Get price value
-     *
-     * @return price
-     */
-    public String getPrice() {
-        return price;
-    }
+	 * @return the price
+	 */
+	public String getPrice() {
+		return price;
+	}
 
-    /**
-     * @param price : price to set
-     */
-    public void setPrice(String price) {
-        this.price = price;
-    }
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(String price) {
+		this.price = price;
+	}
 
 }
