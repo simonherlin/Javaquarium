@@ -1,5 +1,15 @@
 package fr.univlittoral.javaquarium.business;
 
-public interface IPoissonService {
+import java.util.List;
 
+import fr.univlittoral.javaquarium.beans.dto.*;
+
+public interface IPoissonService {
+	/**
+	 * 
+	 * @return
+	 */
+	public List<PoissonDTO> getAll();
+
+	public PoissonDTO save(PoissonDTO poisson);
 }

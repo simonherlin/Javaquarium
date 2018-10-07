@@ -1,4 +1,4 @@
-package fr.univlittoral.javaquarium.beans.web;
+package fr.univlittoral.javaquarium.beans.dto;
 
 public class PoissonDTO {
 	
