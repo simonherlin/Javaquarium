@@ -33,6 +33,6 @@ public class PoissonController
 	@PostMapping(value = "/poisson")
 	public void createPoisson(@RequestBody PoissonDTO poisson)
 	{
-		poissonService.save(poisson);
+		poissonService.create(poisson);
 	}
 }

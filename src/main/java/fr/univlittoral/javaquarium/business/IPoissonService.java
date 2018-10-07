@@ -11,5 +11,5 @@ public interface IPoissonService {
 	 */
 	public List<PoissonDTO> getAll();
 
-	public PoissonDTO save(PoissonDTO poisson);
+	public PoissonDTO create(PoissonDTO poisson);
 }
